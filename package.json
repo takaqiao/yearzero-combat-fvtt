@@ -1,6 +1,6 @@
 {
   "name": "yearzero-combat-fvtt",
-  "version": "1.6.1",
+  "version": "1.7.0",
   "type": "module",
   "description": "Foundry VTT module for Year Zero Engine combat",
   "scripts": {
@@ -43,6 +43,10 @@
     {
       "name": "FloRad",
       "url": "https://gitlab.com/florad92"
+    },
+    {
+      "name": "Cussa Mitre [Hod Publishing]",
+      "url": "https://hodpub.com"
     }
   ],
   "license": "MIT",
