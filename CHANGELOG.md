@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.1](https://github.com/takaqiao/yearzero-combat-fvtt) (2026-08-31)
+
+Fork release (`takaqiao/yearzero-combat-fvtt`). Not an upstream version.
+
+### Bug Fixes
+
+* 🐛 **v14 scene loading crash with systems that already define fast/slow actions.** Status effects are now
+  registered only when the id is not already claimed. Foundry v14 exposes `CONFIG.statusEffects` through a Proxy
+  additionally keyed by effect id; a duplicate id violates the `ownKeys` invariant, so every
+  `Object.keys()`/`Object.values()` over it throws — including core's scene texture preloading. With the Alien RPG
+  system (which registers `fastAction`/`slowAction` during `init`) this made every scene draw after the first fail
+  with `Texture loading failed: 'ownKeys' on proxy: trap returned duplicate entries`.
+  Closes [#93](https://github.com/fvtt-fria-ligan/yearzero-combat-fvtt/issues/93),
+  [pwatson100/alienrpg#428](https://github.com/pwatson100/alienrpg/issues/428).
+* 💄 **Dialog buttons had no visible focus state under some systems.** The module's own dialogs now carry a
+  `yzec-dialog` class and restore a scoped focus ring, so an unscoped system rule such as Alien RPG's
+  `button:hover, button:focus { box-shadow: unset; }` no longer erases it.
+* 🔧 **Manifest URL pointed at `system.json`** instead of `module.json`, breaking Foundry's update check.
+
 ## [1.7.0](https://github.com/fvtt-fria-ligan/yearzero-combat-fvtt/compare/1.6.1...1.7.0) (2026-04-11)
 
 

@@ -173,6 +173,7 @@ export default class YearZeroCombatTracker extends foundry.applications.sidebar.
           window: {
             title: game.i18n.localize('YZEC.CombatTracker.SwapInitiative'),
           },
+          classes: ['yzec-dialog'],
           content,
           ok: {
             callback: (_ev, button, _dlg) => {
@@ -247,6 +248,7 @@ export default class YearZeroCombatTracker extends foundry.applications.sidebar.
           window: {
             title: game.i18n.localize('YZEC.CombatTracker.SetGroupColor'),
           },
+          classes: ['yzec-dialog'],
           content: `
             <form>
               <div class="form-group">

@@ -1,0 +1,31 @@
+/* ------------------------------------------ */
+/*  DIALOG FOCUS STATE                        */
+/*                                            */
+/*  Some systems ship unscoped button rules   */
+/*  that flatten the focus indicator on every */
+/*  button in the application, dialogs        */
+/*  included. Alien RPG, for example, has a   */
+/*  global                                    */
+/*    button:hover, button:focus              */
+/*      { box-shadow: unset; }                */
+/*  which leaves this module's dialogs with   */
+/*  no visible keyboard focus at all.         */
+/*                                            */
+/*  Restore one, scoped to our own dialogs so */
+/*  we never leak styling into the system's.  */
+/* ------------------------------------------ */
+
+.application.dialog.yzec-dialog {
+  .form-footer button,
+  .dialog-buttons button {
+    &:focus-visible {
+      box-shadow: 0 0 0 2px var(--color-shadow-primary, #ff6400);
+      outline: 1px solid transparent; /* keeps a ring in forced-colors mode */
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 4px var(--color-shadow-primary, #ff6400);
+    }
+  }
+}

@@ -18,7 +18,7 @@ const distDirectory = './dist';
 const templateExt = 'hbs';
 const staticFiles = ['cards', 'LICENSE', 'module.json', 'sidebar', 'assets'];
 const getDownloadURL = version =>
-  `https://github.com/fvtt-fria-ligan/yearzero-combat-fvtt/releases/download/${version}/module.zip`;
+  `https://github.com/takaqiao/yearzero-combat-fvtt/releases/download/${version}/module.zip`;
 const packageJson = JSON.parse(fs.readFileSync('package.json'));
 
 const stdio = 'inherit';

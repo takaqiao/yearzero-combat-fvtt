@@ -1,8 +1,8 @@
 {
   "id": "yze-combat",
   "title": "Year Zero Engine: ⚔️ Combat",
-  "description": "Adds YZE combat mechanics to a game system: Card initiative, slow & fast actions, groups, and more!",
-  "version": "1.7.0",
+  "description": "Adds YZE combat mechanics to a game system: Card initiative, slow & fast actions, groups, and more! [takaqiao fork: fixes the v14 duplicate-statusEffect crash with the Alien RPG system]",
+  "version": "1.7.1",
   "compatibility": {
     "minimum": 14,
     "verified": 14,
@@ -32,7 +32,7 @@
       "discord": "CussaMitre"
     }
   ],
-  "bugs": "https://github.com/fvtt-fria-ligan/yearzero-combat-fvtt/issues",
+  "bugs": "https://github.com/takaqiao/yearzero-combat-fvtt/issues",
   "media": [],
   "scripts": [],
   "esmodules": [
@@ -59,13 +59,13 @@
       "path": "lang/sv.json"
     }
   ],
-  "url": "https://github.com/fvtt-fria-ligan/yearzero-combat-fvtt",
-  "readme": "https://github.com/fvtt-fria-ligan/yearzero-combat-fvtt/blob/main/README.md",
-  "changelog": "https://github.com/fvtt-fria-ligan/yearzero-combat-fvtt/blob/main/CHANGELOG.md",
+  "url": "https://github.com/takaqiao/yearzero-combat-fvtt",
+  "readme": "https://github.com/takaqiao/yearzero-combat-fvtt/blob/main/README.md",
+  "changelog": "https://github.com/takaqiao/yearzero-combat-fvtt/blob/main/CHANGELOG.md",
   "license": "LICENSE.txt",
   "socket": true,
-  "manifest": "https://github.com/fvtt-fria-ligan/yearzero-combat-fvtt/releases/latest/download/system.json",
-  "download": "https://github.com/fvtt-fria-ligan/yearzero-combat-fvtt/releases/download/1.7.0/module.zip",
+  "manifest": "https://github.com/takaqiao/yearzero-combat-fvtt/releases/latest/download/module.json",
+  "download": "https://github.com/takaqiao/yearzero-combat-fvtt/releases/download/1.7.1/module.zip",
   "flags": {
     "allowBugReporter": true
   }

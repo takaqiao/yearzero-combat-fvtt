@@ -227,6 +227,7 @@ export default class YearZeroCombat extends Combat {
       window: {
         title: `${combatant.name}: ${game.i18n.localize('YZEC.Combat.Initiative.ChooseCard')}`,
       },
+      classes: ['yzec-dialog'],
       content,
       ok: {
         label: game.i18n.localize('YZEC.OK'),
